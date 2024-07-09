@@ -892,10 +892,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1138,7 +1134,7 @@ body {
   }
 }
 
-.end-section .hr::before {
+.end-section .hr:nth-child(1)::before {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -1146,11 +1142,11 @@ body {
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  top: 45px;
+  top: -18px;
   z-index: -1;
 }
 
-.end-section .hr::after {
+.end-section .hr:nth-child(1)::after {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -1158,7 +1154,31 @@ body {
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  top: 43px;
+  top: -20px;
+  z-index: -1;
+}
+
+.end-section .hr:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background-color: #5b6872;
+  width: 45%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -18px;
+  z-index: -1;
+}
+
+.end-section .hr:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  background-color: #5b6872;
+  width: 45%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
   z-index: -1;
 }
 
@@ -1249,10 +1269,6 @@ body {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:pb-2 {
-    padding-bottom: 0.5rem;
   }
 
   .md\:text-left {
