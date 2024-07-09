@@ -1,4 +1,5 @@
 node_modules
 License.rtf
 Mentum.psd
+tailwind.config.js
 *.json
