@@ -1,5 +1,6 @@
 node_modules
-License
-Mentum
-tailwind.config
-*.json
+License.rtf
+Mentum.psd
+tailwind.config.js
+package-lock.json
+package.json
