@@ -666,10 +666,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -1031,6 +1027,45 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  header nav.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    position: absolute;
+    top: calc(100% + 15px);
+    right: -100%;
+    width: 100%;
+    max-width: 100%;
+    background-color: #f4f4f4;
+    z-index: 100;
+    transition: all .5s;
+  }
+
+  header nav.navigation.active {
+    right: 0;
+  }
+}
+
+/* header .navigation {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: white;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  z-index: 100;
+}
+header .navigation a {
+  display: block;
+  margin-bottom: 10px;
+  &:active {
+    background-color: #68d9ce;
+  }
+} */
+
 .zigzag-header {
   --mask: linear-gradient(0deg, #0000 20px, #000 0) 0 10px,
     radial-gradient(10px, #000 98%, #0000) 50%/18.5px 20px repeat space;
@@ -1185,21 +1220,6 @@ body {
 @media (max-width: 534px) {
   .slide h1::before {
     display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  header nav.navigation.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 0;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 120px;
-    width: 90%;
-    background-color: #f4f4f4;
   }
 }
 

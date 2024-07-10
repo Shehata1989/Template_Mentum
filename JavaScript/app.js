@@ -1,3 +1,21 @@
+const navigation = document.querySelector("header > .navigation"),
+  bar = document.querySelector("header .bar i");
+
+  navigation.addEventListener("click", (e) => e.stopPropagation());
+
+bar.onclick = function () {
+  navigation.classList.toggle("active");
+};
+
+document.addEventListener('click', (e) => {
+
+  if (e.target != navigation && e.target !== bar) {
+    navigation.classList.remove("active");
+  }
+})
+
+// #####################################################################
+
 const slide = document.querySelectorAll(".slider-container .slide"),
   wrapper = document.querySelector(".wrapper"),
   buttons = document.querySelectorAll(".button"),
@@ -33,13 +51,13 @@ function slider() {
 let framesContainer = document.querySelector(".frames-container"),
   control = document.querySelectorAll(".portfolio .control ul li");
 
-  control.forEach((li) => {
-    li.addEventListener("click", (e) => {
-      control.forEach((li) => {
-        li.classList.remove("active");
-      });
-      e.currentTarget.classList.add("active");
-      currentIndex = li.getAttribute("data-index");
-      framesContainer.style.transform = `translatey(-${currentIndex * 100}%)`;
+control.forEach((li) => {
+  li.addEventListener("click", (e) => {
+    control.forEach((li) => {
+      li.classList.remove("active");
     });
+    e.currentTarget.classList.add("active");
+    currentIndex = li.getAttribute("data-index");
+    framesContainer.style.transform = `translatey(-${currentIndex * 100}%)`;
   });
+});
