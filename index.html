@@ -15,12 +15,12 @@
   </head>
   <body>
     <!-- Start Home Section -->
-    <div class="home bg-bgSection  overflow-hidden">
-      <!-- Header Section -->
+    <div class="home bg-bgSection overflow-hidden">
+      <!-- Start Header -->
       <header
         class="h-20 pl-3 pr-3 flex justify-between items-center md:container relative"
       >
-        <!-- Logo -->
+        <!-- Start Logo -->
         <div class="logo">
           <img
             class="w-[180px] ml-6 relative z-20"
@@ -33,7 +33,8 @@
             alt=""
           />
         </div>
-        <!-- Navigation -->
+        <!-- End Logo -->
+        <!-- Start Navigation -->
         <nav class="navigation gap-6 md:flex">
           <div class="link">
             <a
@@ -78,6 +79,8 @@
             >
           </div>
         </nav>
+        <!-- End Navigation -->
+        <!-- Start Icons Navigation Mobile -->
         <div class="icons flex flex-row-reverse items-center gap-5">
           <!-- Bars Staggered -->
           <div class="bar md:hidden">
@@ -85,19 +88,21 @@
               class="fa-solid fa-bars-staggered text-linkColor cursor-pointer"
             ></i>
           </div>
-          <!-- Search -->
+          <!-- Search Icon -->
           <div
             class="search md:text-2xl hover:text-primary text-linkColor transition duration-300 cursor-pointer"
           >
             <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
           </div>
         </div>
+        <!-- End Icons Navigation Mobile -->
       </header>
-      <!-- BG Content Home -->
+      <!-- End Header -->
+      <!-- BG Slider -->
       <div
         class="content-home w-full min-h-[450px] bg-secondary flex flex-col items-center justify-center zigzag-header"
       ></div>
-      <!-- Slider Container -->
+      <!-- Start Slider Container -->
       <div
         class="slider-container w-[800px] max-w-[80%] h-[430px] border-8 border-white bg-white shadow-2xl absolute top-[250px] left-[50%] -translate-x-[50%]"
       >
@@ -192,18 +197,22 @@
           <ul></ul>
         </div>
       </div>
+      <!-- End Slider Container -->
+
+      <!-- Start Footer Section -->
       <div
-        class="text-center -translate-y-[50px] max-w-[450px] m-auto mt-[300px] bg-bgSection text-textColor tracking-widest"
+        class="end-section text-center -translate-y-[50px] max-w-[450px] m-auto mt-[300px] bg-bgSection text-textColor tracking-widest"
       >
         <p class="px-5">
           Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero mal
           suada feugiat. Curabitur aliquet quam uis lorem
         </p>
       </div>
+      <!-- End Footer Section -->
     </div>
     <!-- End Home Section -->
-    <!-- Start  Section -->
-    <section class="portfolio h-screen">
+    <!-- Start Portfolio Section -->
+    <section class="portfolio h-screen relative">
       <div class="container relative">
         <div class="head mt-10">
           <div class="hr relative"></div>
@@ -728,6 +737,11 @@
             mal suada feugiat. Curabitur aliquet quam uis lorem
           </p>
           <div class="hr relative"></div>
+          <img
+            class="absolute -bottom-[100px] left-[10px] md:left-[50px] lg:left-[100px] opacity-[0.1] w-64 md:w-80"
+            src="images/Camera Image Opacity.png"
+            alt=""
+          />
         </div>
       </div>
     </section>
