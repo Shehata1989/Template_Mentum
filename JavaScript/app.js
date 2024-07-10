@@ -48,7 +48,7 @@ function slider() {
 
 // #####################################################################
 
-let framesContainer = document.querySelector(".frames-container"),
+let warpperContainer = document.querySelector(".portfolio .warpper-container"),
   control = document.querySelectorAll(".portfolio .control ul li");
 
 control.forEach((li) => {
@@ -58,6 +58,6 @@ control.forEach((li) => {
     });
     e.currentTarget.classList.add("active");
     currentIndex = li.getAttribute("data-index");
-    framesContainer.style.transform = `translatey(-${currentIndex * 100}%)`;
+    warpperContainer.style.transform = `translatey(-${currentIndex * 100}%)`;
   });
 });

@@ -594,8 +594,8 @@ video {
   position: relative;
 }
 
-.-bottom-4 {
-  bottom: -1rem;
+.-bottom-\[100px\] {
+  bottom: -100px;
 }
 
 .-left-0 {
@@ -610,8 +610,8 @@ video {
   right: -40px;
 }
 
-.left-\[100px\] {
-  left: 100px;
+.left-\[10px\] {
+  left: 10px;
 }
 
 .left-\[50\%\] {
@@ -628,50 +628,6 @@ video {
 
 .top-\[250px\] {
   top: 250px;
-}
-
-.-bottom-48 {
-  bottom: -12rem;
-}
-
-.-bottom-\[30px\] {
-  bottom: -30px;
-}
-
-.-bottom-\[50pxpx\] {
-  bottom: -50pxpx;
-}
-
-.-bottom-\[50px\] {
-  bottom: -50px;
-}
-
-.left-\[80px\] {
-  left: 80px;
-}
-
-.left-\[20px\] {
-  left: 20px;
-}
-
-.-bottom-\[40px\] {
-  bottom: -40px;
-}
-
-.-bottom-\[80px\] {
-  bottom: -80px;
-}
-
-.-bottom-\[90px\] {
-  bottom: -90px;
-}
-
-.-bottom-\[100px\] {
-  bottom: -100px;
-}
-
-.left-\[10px\] {
-  left: 10px;
 }
 
 .z-10 {
@@ -1108,25 +1064,7 @@ body {
   }
 }
 
-/* header .navigation {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  background-color: white;
-  width: 200px;
-  padding: 10px;
-  text-align: center;
-  z-index: 100;
-}
-header .navigation a {
-  display: block;
-  margin-bottom: 10px;
-  &:active {
-    background-color: #68d9ce;
-  }
-} */
-
-.zigzag-header {
+.zigzag {
   --mask: linear-gradient(0deg, #0000 20px, #000 0) 0 10px,
     radial-gradient(10px, #000 98%, #0000) 50%/18.5px 20px repeat space;
   -webkit-mask: var(--mask);
@@ -1164,18 +1102,18 @@ header .navigation a {
   mask: var(--mask);
 }
 
-.content-home {
+.home .content-home {
   background-image: url("/images/Opacity Icons.png");
   background-repeat: no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.slider-container .wrapper {
+.home .slider-container .wrapper {
   transition: 1s;
 }
 
-.slider-container .fa-arrow-right {
+.home .slider-container .fa-arrow-right {
   &::before {
     position: absolute;
     right: 15px;
@@ -1184,7 +1122,7 @@ header .navigation a {
   }
 }
 
-.slider-container .fa-arrow-left {
+.home .slider-container .fa-arrow-left {
   &::before {
     position: absolute;
     left: 15px;
@@ -1193,7 +1131,7 @@ header .navigation a {
   }
 }
 
-.slide h1::before {
+.home .slide h1::before {
   content: "";
   width: 20%;
   height: 3px;
@@ -1229,7 +1167,7 @@ header .navigation a {
   }
 }
 
-.end-section .hr:nth-child(1)::before {
+.portfolio .footer-sec .hr:nth-child(1)::before {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -1241,7 +1179,7 @@ header .navigation a {
   z-index: -1;
 }
 
-.end-section .hr:nth-child(1)::after {
+.portfolio .footer-sec .hr:nth-child(1)::after {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -1253,7 +1191,7 @@ header .navigation a {
   z-index: -1;
 }
 
-.end-section .hr:nth-child(3)::before {
+.portfolio .footer-sec .hr:nth-child(3)::before {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -1265,7 +1203,7 @@ header .navigation a {
   z-index: -1;
 }
 
-.end-section .hr:nth-child(3)::after {
+.portfolio .footer-sec .hr:nth-child(3)::after {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -1339,14 +1277,6 @@ header .navigation a {
 }
 
 @media (min-width: 767px) {
-  .md\:left-\[200px\] {
-    left: 200px;
-  }
-
-  .md\:left-\[300px\] {
-    left: 300px;
-  }
-
   .md\:left-\[50px\] {
     left: 50px;
   }
@@ -1378,18 +1308,6 @@ header .navigation a {
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-\[\] {
-    left: ;
-  }
-
-  .lg\:left-\[500\] {
-    left: 500;
-  }
-
-  .lg\:left-\[500px\] {
-    left: 500px;
-  }
-
   .lg\:left-\[100px\] {
     left: 100px;
   }

@@ -100,7 +100,7 @@
       <!-- End Header -->
       <!-- BG Slider -->
       <div
-        class="content-home w-full min-h-[450px] bg-secondary flex flex-col items-center justify-center zigzag-header"
+        class="content-home w-full min-h-[450px] bg-secondary flex flex-col items-center justify-center zigzag"
       ></div>
       <!-- Start Slider Container -->
       <div
@@ -201,7 +201,7 @@
 
       <!-- Start Footer Section -->
       <div
-        class="end-section text-center -translate-y-[50px] max-w-[450px] m-auto mt-[300px] bg-bgSection text-textColor tracking-widest"
+        class="footer-sec text-center -translate-y-[50px] max-w-[450px] m-auto mt-[300px] bg-bgSection text-textColor tracking-widest"
       >
         <p class="px-5">
           Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero mal
@@ -214,6 +214,7 @@
     <!-- Start Portfolio Section -->
     <section class="portfolio h-screen relative">
       <div class="container relative">
+        <!-- Start Header section -->
         <div class="head mt-10">
           <div class="hr relative"></div>
           <h1
@@ -222,10 +223,14 @@
             Portfolio
           </h1>
         </div>
-        <div class="h-full w-full overflow-hidden">
-          <div class="frames-container h-[640px] transition duration-1000">
+        <!-- End Header section -->
+        <!-- My Cards -->
+        <div class="w-full h-[640px] overflow-hidden">
+          <!-- Cards Container -->
+          <div class="warpper-container h-full transition duration-1000">
+            <!-- Grid Cards -->
             <div
-              class="frames w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-x-5 gap-y-5"
+              class="cards w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-x-5 gap-y-5"
             >
               <div
                 class="card bg-bgCard h-[300px] flex flex-col justify-between rounded-lg transition duration-300"
@@ -716,6 +721,8 @@
             </div>
           </div>
         </div>
+        <!-- End Cards -->
+        <!-- Control -->
         <div class="control">
           <ul>
             <li class="active" data-index="0"></li>
@@ -729,8 +736,8 @@
             <li class="md:hidden" data-index="8"></li>
           </ul>
         </div>
-
-        <div class="end-section relative">
+        <!-- Start Footer Section -->
+        <div class="footer-sec relative">
           <div class="hr relative"></div>
           <p class="text-center text-textColor max-w-[500px] m-auto mt-[80px]">
             Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero
@@ -743,8 +750,11 @@
             alt=""
           />
         </div>
+        <!-- End Footer Section -->
       </div>
     </section>
+    <!-- End Portfolio Section -->
+     
 
     <script src="./JavaScript/app.js"></script>
   </body>
