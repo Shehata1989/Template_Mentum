@@ -48,25 +48,7 @@ body {
   }
 }
 
-/* header .navigation {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  background-color: white;
-  width: 200px;
-  padding: 10px;
-  text-align: center;
-  z-index: 100;
-}
-header .navigation a {
-  display: block;
-  margin-bottom: 10px;
-  &:active {
-    background-color: #68d9ce;
-  }
-} */
-
-.zigzag-header {
+.zigzag {
   --mask: linear-gradient(0deg, #0000 20px, #000 0) 0 10px,
     radial-gradient(10px, #000 98%, #0000) 50%/18.5px 20px repeat space;
   -webkit-mask: var(--mask);
@@ -104,17 +86,17 @@ header .navigation a {
   mask: var(--mask);
 }
 
-.content-home {
+.home .content-home {
   background-image: url("/images/Opacity Icons.png");
   background-repeat: no-repeat;
   object-fit: cover;
 }
 
-.slider-container .wrapper {
+.home .slider-container .wrapper {
   transition: 1s;
 }
 
-.slider-container .fa-arrow-right {
+.home .slider-container .fa-arrow-right {
   &::before {
     position: absolute;
     right: 15px;
@@ -122,7 +104,7 @@ header .navigation a {
     transform: translateY(-50%);
   }
 }
-.slider-container .fa-arrow-left {
+.home .slider-container .fa-arrow-left {
   &::before {
     position: absolute;
     left: 15px;
@@ -131,7 +113,7 @@ header .navigation a {
   }
 }
 
-.slide h1::before {
+.home .slide h1::before {
   content: "";
   width: 20%;
   height: 3px;
@@ -166,7 +148,7 @@ header .navigation a {
   }
 }
 
-.end-section .hr:nth-child(1)::before {
+.portfolio .footer-sec .hr:nth-child(1)::before {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -178,7 +160,7 @@ header .navigation a {
   z-index: -1;
 }
 
-.end-section .hr:nth-child(1)::after {
+.portfolio .footer-sec .hr:nth-child(1)::after {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -189,7 +171,7 @@ header .navigation a {
   top: -20px;
   z-index: -1;
 }
-.end-section .hr:nth-child(3)::before {
+.portfolio .footer-sec .hr:nth-child(3)::before {
   content: "";
   position: absolute;
   background-color: #5b6872;
@@ -201,7 +183,7 @@ header .navigation a {
   z-index: -1;
 }
 
-.end-section .hr:nth-child(3)::after {
+.portfolio .footer-sec .hr:nth-child(3)::after {
   content: "";
   position: absolute;
   background-color: #5b6872;
