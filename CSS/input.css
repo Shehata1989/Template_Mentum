@@ -28,7 +28,6 @@ body {
   }
 }
 
-
 .zigzag-header {
   --mask: linear-gradient(0deg, #0000 20px, #000 0) 0 10px,
     radial-gradient(10px, #000 98%, #0000) 50%/18.5px 20px repeat space;
