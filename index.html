@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./CSS/output.css" />
+    <title>Mentum</title>
+    <!-- Library Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Library Fider -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./CSS/output.css" />
   </head>
   <body>
     <!-- Start Home Section -->
@@ -111,16 +115,16 @@
             <div
               class="slide h-full w-full p-10 bg-secondary border-white rounded-lg text-center flex flex-col flex-shrink-0 justify-center md:text-left"
             >
-              <h1 class="text-primary text-5xl relative">We are Mentum</h1>
+              <h1 class="text-primary text-5xl relative" data-aos="slide-left"data-aos-duration="1000">We are Mentum</h1>
               <p
-                class="mt-10 mb-10 text-textColor text-xl font-bold max-w-[450px]"
+                class="mt-10 mb-10 text-textColor text-xl font-bold max-w-[450px]" data-aos="slide-left"data-aos-duration="1500"
               >
                 Pellentesque in ipsum id orci porta dapibus. Vivamus magna
                 justo, lacinia eget consec etur sed, convallis at tellus.
               </p>
               <div class="">
                 <button
-                  class="bg-primary px-6 py-2 text-secondary rounded-lg hover:text-white hover:bg-hoverBTN transition duration-300"
+                  class="bg-primary px-6 py-2 text-secondary rounded-lg hover:text-white hover:bg-hoverBTN transition duration-300" data-aos="slide-up" data-aos-duration="2000"
                 >
                   Contact Us
                 </button>
@@ -754,8 +758,13 @@
       </div>
     </section>
     <!-- End Portfolio Section -->
-     
 
+    <!-- libaray Fader -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- JavaScript File -->
     <script src="./JavaScript/app.js"></script>
   </body>
 </html>
