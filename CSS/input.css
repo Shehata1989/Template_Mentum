@@ -150,7 +150,7 @@ body {
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  top: -18px;
+  top: 24px;
   z-index: -1;
 }
 
@@ -162,7 +162,7 @@ body {
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  top: -20px;
+  top: 22px;
   z-index: -1;
 }
 .portfolio .footer-sec .hr:nth-child(3)::before {
@@ -173,7 +173,7 @@ body {
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -18px;
+  bottom: 23px;
   z-index: -1;
 }
 
@@ -185,7 +185,7 @@ body {
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -20px;
+  bottom: 25px;
   z-index: -1;
 }
 
