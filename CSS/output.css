@@ -594,8 +594,8 @@ video {
   position: relative;
 }
 
-.-bottom-6 {
-  bottom: -1.5rem;
+.-bottom-5 {
+  bottom: -1.25rem;
 }
 
 .-bottom-\[100px\] {
@@ -642,10 +642,6 @@ video {
   top: 250px;
 }
 
-.-bottom-5 {
-  bottom: -1.25rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -670,6 +666,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -684,10 +684,6 @@ video {
 
 .mt-\[80px\] {
   margin-top: 80px;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -730,24 +726,16 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .min-h-\[450px\] {
   min-height: 450px;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
-.min-h-\[600px\] {
-  min-height: 600px;
-}
-
 .min-h-\[650px\] {
   min-height: 650px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-10 {
@@ -868,16 +856,24 @@ video {
   row-gap: 1.25rem;
 }
 
-.divide-y-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
-.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+.gap-y-52 {
+  row-gap: 13rem;
+}
+
+.gap-y-40 {
+  row-gap: 10rem;
+}
+
+.gap-y-44 {
+  row-gap: 11rem;
+}
+
+.gap-y-\[110px\] {
+  row-gap: 110px;
 }
 
 .divide-slate-500 > :not([hidden]) ~ :not([hidden]) {
@@ -899,20 +895,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-r-full {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-}
-
-.rounded-l {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
-
-.border {
-  border-width: 1px;
 }
 
 .border-2 {
@@ -1127,21 +1109,7 @@ body {
   .container {
     max-width: 100%;
   }
-}
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 1500px) {
-  .container {
-    max-width: 60%;
-  }
-}
-
-@media (max-width: 767px) {
   header nav.navigation {
     display: flex;
     flex-direction: column;
@@ -1399,12 +1367,12 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:gap-12 {
-    gap: 3rem;
-  }
-
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:gap-y-\[110px\] {
+    row-gap: 110px;
   }
 
   .md\:text-left {
