@@ -41,7 +41,7 @@ body {
     max-width: 100%;
     background-color: #f4f4f4;
     z-index: 100;
-    transition: all .5s;
+    transition: all 0.5s;
   }
   header nav.navigation.active {
     right: 0;
@@ -54,6 +54,8 @@ body {
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
+
+/* ######################################################### */
 
 .head .hr::before {
   content: "";
@@ -78,6 +80,8 @@ body {
   top: 16px;
   z-index: -1;
 }
+
+/* ######################################################### */
 
 .home {
   min-height: 100vh;
@@ -120,7 +124,7 @@ body {
   background-color: #68d9ce;
   position: absolute;
   bottom: -10px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .portfolio .card i::before {

@@ -17,11 +17,12 @@ document.addEventListener('click', (e) => {
 // #####################################################################
 
 const slide = document.querySelectorAll(".slider-container .slide"),
-  wrapper = document.querySelector(".wrapper"),
-  buttons = document.querySelectorAll(".button"),
-  pagination = document.querySelector(".pagination ul");
+wrapper = document.querySelector(".wrapper"),
+buttons = document.querySelectorAll(".button"),
+pagination = document.querySelector(".pagination ul");
 let currentIndex = 0,
-  slidesCount = slide.length;
+slidesCount = slide.length;
+console.log(slide)
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
