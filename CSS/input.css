@@ -45,6 +45,10 @@ body {
   mask: var(--mask);
 }
 
+.divide-slate-600 {
+  border-color: #444;
+}
+
 /* ######################################################### */
 
 .head .hr::before {
@@ -68,6 +72,30 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: 16px;
+  z-index: -1;
+}
+
+.services .hr::before {
+  content: "";
+  position: absolute;
+  background-color: #5b6872;
+  width: 40%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -32px;
+  z-index: -1;
+}
+
+.services .hr::after {
+  content: "";
+  position: absolute;
+  background-color: #5b6872;
+  width: 40%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
   z-index: -1;
 }
 
