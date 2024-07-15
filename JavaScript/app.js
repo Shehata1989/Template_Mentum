@@ -1,28 +1,27 @@
 const navigation = document.querySelector("header > .navigation"),
   bar = document.querySelector("header .bar i");
 
-  navigation.addEventListener("click", (e) => e.stopPropagation());
+navigation.addEventListener("click", (e) => e.stopPropagation());
 
 bar.onclick = function () {
   navigation.classList.toggle("active");
 };
 
-document.addEventListener('click', (e) => {
-
+document.addEventListener("click", (e) => {
   if (e.target != navigation && e.target !== bar) {
     navigation.classList.remove("active");
   }
-})
+});
 
 // #####################################################################
 
 const slide = document.querySelectorAll(".slider-container .slide"),
-wrapper = document.querySelector(".wrapper"),
-buttons = document.querySelectorAll(".button"),
-pagination = document.querySelector(".pagination ul");
+  wrapper = document.querySelector(".wrapper"),
+  buttons = document.querySelectorAll(".button"),
+  pagination = document.querySelector(".pagination ul");
 let currentIndex = 0,
-slidesCount = slide.length;
-console.log(slide)
+  slidesCount = slide.length;
+console.log(slide);
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -61,4 +60,17 @@ control.forEach((li) => {
     currentIndex = li.getAttribute("data-index");
     warpperContainer.style.transform = `translatey(-${currentIndex * 100}%)`;
   });
+});
+
+// #####################################################################
+let skillsSec = document.querySelector(".about .row");
+let skills = document.querySelectorAll(".skills .skill #progress");
+
+window.addEventListener("scroll", () => {
+  if (scrollY >= skillsSec.offsetTop - 200) {
+    skills.forEach((span) => {
+      span.style.width = span.dataset.w;
+      span.style.width = span.dataset.w;
+    });
+  }
 });
