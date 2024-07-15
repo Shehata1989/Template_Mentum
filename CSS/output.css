@@ -757,10 +757,6 @@ video {
   height: 6rem;
 }
 
-.h-\[1000px\] {
-  height: 1000px;
-}
-
 .h-\[120px\] {
   height: 120px;
 }
@@ -1585,6 +1581,10 @@ body {
 }
 
 @media (min-width: 767px) {
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1595,6 +1595,14 @@ body {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:gap-10 {
