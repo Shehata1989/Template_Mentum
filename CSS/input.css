@@ -50,52 +50,74 @@ body {
 }
 
 /* ######################################################### */
-
-.head .hr::before {
+.hr-head::before {
   content: "";
   position: absolute;
-  background-color: #5b6872;
   width: 100%;
   height: 1px;
+  background-color: #5b6872;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -1;
+}
+
+.hr-head::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #5b6872;
   top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.hr-top::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: #5b6872;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
 }
 
-.head .hr::after {
+.hr-top::after {
   content: "";
   position: absolute;
-  background-color: #5b6872;
-  width: 100%;
+  width: 50%;
   height: 1px;
+  background-color: #5b6872;
+  top: 2px;
   left: 50%;
   transform: translateX(-50%);
-  top: 16px;
   z-index: -1;
 }
 
-.services .hr::before {
+.hr-bottom::before {
   content: "";
   position: absolute;
-  background-color: #5b6872;
-  width: 40%;
+  width: 50%;
   height: 1px;
+  background-color: #5b6872;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  top: -32px;
   z-index: -1;
 }
 
-.services .hr::after {
+.hr-bottom::after {
   content: "";
   position: absolute;
-  background-color: #5b6872;
-  width: 40%;
+  width: 50%;
   height: 1px;
+  background-color: #5b6872;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
-  top: -30px;
   z-index: -1;
 }
 
@@ -178,7 +200,7 @@ body {
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  top: 24px;
+  top: 0;
   z-index: -1;
 }
 
@@ -190,7 +212,7 @@ body {
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  top: 22px;
+  bottom: 0;
   z-index: -1;
 }
 .portfolio .footer-sec .hr:nth-child(3)::before {
@@ -214,6 +236,52 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: 25px;
+  z-index: -1;
+}
+
+.about .footer-sec .hr:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background-color: #5b6872;
+  width: 45%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: -1;
+}
+.about .footer-sec .hr:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  background-color: #5b6872;
+  width: 45%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2px;
+  z-index: -1;
+}
+.about .footer-sec .hr:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background-color: #5b6872;
+  width: 45%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: -1;
+}
+
+.about .footer-sec .hr:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  background-color: #5b6872;
+  width: 45%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2px;
   z-index: -1;
 }
 
