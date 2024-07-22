@@ -28,14 +28,14 @@ buttons.forEach((btn) => {
     if (btn.classList.contains("fa-arrow-left")) {
       currentIndex--;
       if (currentIndex < 0) {
-        currentIndex = 0;
+        currentIndex = slidesCount - 1;
       }
       slider();
     }
     if (btn.classList.contains("fa-arrow-right")) {
       currentIndex++;
       if (currentIndex === slidesCount) {
-        currentIndex = slidesCount - 1;
+        currentIndex = 0;
       }
       slider();
     }
