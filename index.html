@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Library Fider -->
+    <!-- Library AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="./CSS/output.css" />
@@ -217,7 +217,7 @@
 
       <!-- Start Footer Section -->
       <div
-        class="footer-sec text-center -translate-y-[50px] max-w-[450px] m-auto mt-[300px] bg-bgSection text-textColor tracking-widest"
+        class="footer-sec text-center max-w-[450px] m-auto mt-[200px] mb-[50px] bg-bgSection text-textColor tracking-widest"
       >
         <p class="px-5">
           Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero mal
@@ -229,9 +229,9 @@
     <!-- End Home Section -->
     <!-- Start Portfolio Section -->
     <section class="portfolio">
-      <div class="container">
+      <div class="container py-12">
         <!-- Start Header section -->
-        <div class="head mt-10 relative">
+        <div class="head relative">
           <div class="hr-head relative"></div>
           <h1
             class="text-textColor text-2xl w-fit m-auto pt-0 pb-10 px-5 bg-white"
@@ -1043,7 +1043,7 @@
     <section class="about bg-bgSection">
       <div class="container py-12">
         <!-- Start Header section -->
-        <div class="head p-10 relative z-50">
+        <div class="head relative z-50">
           <div class="hr-head relative"></div>
           <h1
             class="text-textColor text-2xl w-fit pt-0 pb-10 px-5 m-auto bg-bgSection"
@@ -1057,10 +1057,10 @@
         </div>
         <!-- End Header section -->
         <!-- Start Items About -->
-        <div class="container-about mt-12 mb-24">
+        <div class="container-about my-12">
           <!-- Start Items Services -->
           <div
-            class="grid-items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-y-[80px] md:gap-y-[50px] md:gap-10"
+            class="grid-items grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-y-[80px] md:gap-y-[50px] md:gap-10 mb-[75px]"
           >
             <!-- Item One -->
             <div
@@ -1187,9 +1187,7 @@
         <!-- Start Footer Section -->
         <div class="footer-sec relative mb-5">
           <div class="hr-top relative"></div>
-          <p
-            class="text-center text-primary font-bold max-w-[500px] m-auto py-8"
-          >
+          <p class="text-center text-primary font-bold max-w-[500px] m-auto">
             Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero
             mal suada feugiat. Curabitur aliquet quam uis lorem
           </p>
@@ -1198,7 +1196,7 @@
         <!-- End Footer Section -->
       </div>
       <!-- Start Skills -->
-      <div class="container py-12">
+      <div class="container pb-12">
         <div
           class="row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-y-[50px] md:gap-y-[50px] md:gap-10"
         >
@@ -1330,11 +1328,10 @@
     </section>
     <!-- End About Section -->
     <!-- Start Pricing Section -->
-
     <section class="pricing">
       <div class="container py-12">
         <!-- Start Header section -->
-        <div class="head p-10 relative z-50">
+        <div class="head relative z-50">
           <div class="hr-head relative"></div>
           <h1
             class="text-textColor text-2xl w-fit pt-0 pb-10 px-5 m-auto bg-white"
@@ -1349,7 +1346,7 @@
         <!-- End Header section -->
         <!-- Start Body  -->
         <div
-          class="white-sec row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-y-[50px] md:gap-y-[50px] md:gap-10"
+          class="white-sec row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-y-[50px] md:gap-y-[50px] md:gap-10 my-12"
         >
           <!-- Col One -->
           <div
@@ -1527,7 +1524,7 @@
         </div>
       </div>
       <!-- End Footer Section -->
-      <div class="bg-bgSection">
+      <div class="bg-bgSection zigzag-pricing">
         <div class="container py-12">
           <p
             class="text-center text-textColor font-bold max-w-[600px] m-auto pb-14"
@@ -1700,7 +1697,7 @@
           <!-- End Body  -->
           <!-- Start Footer -->
           <div
-            class="footer-sec py-10 mt-16 zigzag flex justify-center"
+            class="footer-sec mt-16 flex justify-center"
             data-aos="fade-down"
             data-aos-duration="3000"
           >
@@ -1724,8 +1721,97 @@
         </div>
       </div>
     </section>
-
     <!-- End Pricing Section -->
+    <!-- Start Subscribe  -->
+    <div class="subscribe">
+      <div class="container py-10">
+        <div class="hr-top relative"></div>
+        <!-- Head -->
+        <div class="text-center py-5">
+          <p class="text-2xl text-primary font-bold py-5">
+            Subscribe if you like what you see
+          </p>
+          <p class="max-w-[500px] m-auto text-textColor">
+            Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero
+            malesuada feugiat. Curabitur aliquet quam
+          </p>
+          <form
+            class="mt-5 flex flex-col md:flex-row md:justify-center md:items-center gap-5"
+          >
+            <input
+              class="bg-slate-200 p-2 rounded-lg outline-none"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              class="bg-slate-200 p-2 rounded-lg outline-none"
+              type="text"
+              placeholder="Mail"
+            />
+            <!-- Button -->
+            <div class="">
+              <button
+                class="block mx-auto text-secondary px-6 py-2 bg-primary rounded-lg hover:text-white hover:bg-hoverBTN transition duration-300 shadow-lg shadow-slate-500"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Body -->
+        <div class="mt-20">
+          <div
+            class="row flex flex-wrap flex-col items-start content-center gap-14 md:flex-row md:justify-between md:items-center md:max-w-[1000px] m-auto"
+          >
+            <!-- Col One -->
+            <div class="col flex justify-center items-center gap-4">
+              <i
+                class="fa-solid fa-person-shelter text-[50px] text-primary"
+              ></i>
+              <span class="text-4xl text-textColor tracking-widest">
+                230
+                <span class="text-[15px] block -mt-[20px] tracking-normal"
+                  >Customers</span
+                >
+              </span>
+            </div>
+            <!-- Col Two -->
+            <div class="col flex justify-center items-center gap-4">
+              <i class="fa-solid fa-heart text-[50px] text-primary"></i>
+              <span class="text-4xl text-textColor tracking-widest">
+                12
+                <span class="text-[15px] block -mt-[20px] tracking-normal"
+                  >Awards</span
+                >
+              </span>
+            </div>
+            <!-- Col There -->
+            <div class="col flex justify-center items-center gap-4">
+              <i class="fa-regular fa-clock text-[50px] text-primary"></i>
+              <span class="text-4xl text-textColor tracking-widest">
+                2380
+                <span class="text-[15px] block -mt-[20px] tracking-normal"
+                  >Completed Projects</span
+                >
+              </span>
+            </div>
+            <!-- Col Four -->
+            <div class="col flex justify-center items-center gap-4">
+              <i class="fa-brands fa-x-twitter text-[50px] text-primary"></i>
+              <span class="text-4xl text-textColor tracking-widest">
+                50890
+                <span class="text-[15px] block -mt-[20px] tracking-normal"
+                  >Followers</span
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="hr-top relative mt-[40px]"></div>
+      </div>
+    </div>
+    <!-- End Subscribe  -->
+    <div class="h-96"></div>
     <!-- libaray Fader -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
