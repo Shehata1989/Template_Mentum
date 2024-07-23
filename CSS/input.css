@@ -45,6 +45,12 @@ body {
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
+.zigzag-subscribe {
+  --mask: linear-gradient(to bottom, #0000 10px, #000 0),
+    radial-gradient(10px, #000 98%, #0000) top/18.5px 20px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
 
 .divide-slate-600 {
   border-color: #444;
@@ -192,7 +198,6 @@ body {
   }
 }
 
-
 .portfolio .footer-sec .hr:nth-child(1)::before {
   content: "";
   position: absolute;
@@ -240,7 +245,6 @@ body {
   z-index: -1;
 }
 
-
 .about .footer-sec .hr:nth-child(1)::before {
   content: "";
   position: absolute;
@@ -285,7 +289,6 @@ body {
   bottom: -2px;
   z-index: -1;
 }
-
 
 .subscribe .container .hr-top:nth-of-type(1)::before {
   content: "";
