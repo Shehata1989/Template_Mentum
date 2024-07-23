@@ -52,6 +52,13 @@ body {
   mask: var(--mask);
 }
 
+.zigzag-contact {
+  --mask: linear-gradient(to bottom, #0000 10px, #000 0),
+    radial-gradient(10px, #000 98%, #0000) top/18.5px 20px;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
 .divide-slate-600 {
   border-color: #444;
 }
