@@ -1009,10 +1009,6 @@ video {
   gap: 1.5rem;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
