@@ -13,7 +13,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-
 // #####################################################################
 
 const slide = document.querySelectorAll(".slider-container .slide"),
@@ -74,3 +73,16 @@ window.addEventListener("scroll", () => {
     });
   }
 });
+
+// #####################################################################
+
+let arrowUp = document.querySelector(".arrow-up");
+console.log(arrowUp);
+
+arrowUp.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
